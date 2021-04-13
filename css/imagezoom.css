@@ -1,0 +1,33 @@
+/**
+ *
+ *
+ */
+/* -- SCREEN Media queries -- */
+/* -- COLORS -- */
+/* -- END COLORS -- */
+/* -- IMG PATH -- */
+/* -- END IMG PATH -- */
+/* -- BASE PROJECT FONT SETTINGS -- */
+/* -- END BASE PROJECT FONT SETTINGS -- */
+/* -- ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- END ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- ANIMATION STYLE -- */
+/* -- END ANIMATION STYLE -- */
+/* -- PRIMARY MIXIN -- */
+/*.transform(...) {
+	transform: @arguments translateZ(0);
+	-ms-transform: @arguments translateZ(0);
+	-webkit-transform: @arguments translateZ(0);
+}*/
+/* -- END PRIMARY MIXIN -- */
+/* -- SPECIFIC MIXIN -- */
+/*-- Light bg typography styles
+-----------------------------*/
+/*---------------------------*/
+/* -- END SPECIFIC MIXIN -- */
+.ul-w-imagezoom .ul-w-imagezoom-title[contenteditable="true"],
+.ul-w-imagezoom .ul-w-imagezoom-title-hover[contenteditable="true"],
+.ul-w-imagezoom .ul-w-imagezoom-title.-over,
+.ul-w-imagezoom .ul-w-imagezoom-title-hover.-over {
+  opacity: 1 !important;
+}

@@ -1,0 +1,320 @@
+.ul-linkPopover .ul-linkPopover-link {
+  white-space: nowrap;
+}
+.ul-linkPopover .ul-linkPopover-link .ul-icon {
+  padding-top: 8px;
+}
+.ul-linkPopover .ul-linkPopover-link .ul-icon:last-child {
+  padding-right: 0;
+}
+.ul-linkPopover .ul-linkPopover-link .ul-united-editlink:hover .link-type-text,
+.ul-linkPopover .ul-linkPopover-link .ul-united-editlink:hover .ul-icon-main {
+  color: #ccd8df;
+}
+.ul-linkPopover .ul-linkPopover-link .link-type-text {
+  margin-right: 4px;
+  cursor: pointer;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-linkPopover .ul-linkPopover-link .link-type-text:hover {
+  color: #ccd8df;
+}
+.ul-linkPopover .ul-linkPopover-link .link-page-type {
+  color: #8DA8B8;
+  padding: 0 6px 0 6px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  height: 30px;
+  line-height: 32px;
+}
+.ul-linkPopover .ul-linkPopover-link .link-page-type .ul-icon {
+  vertical-align: top;
+}
+.ul-linkPopover .ul-linkPopover-link .link-page-type .link-address {
+  color: #338FFF;
+  font-size: 13px;
+  max-width: 275px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 7px;
+  height: 26px;
+  line-height: 32px;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  border-bottom: 1px solid rgba(102, 171, 255, 0);
+}
+.ul-linkPopover .ul-linkPopover-link .link-page-type .link-address.link-page-nonexistent {
+  color: #C2445C;
+}
+.ul-linkPopover .ul-linkPopover-link .link-page-type .link-address.link-page-nonexistent:hover {
+  color: #cf6a7e;
+  border-bottom-color: rgba(207, 106, 126, 0.5);
+}
+.ul-linkPopover .ul-linkPopover-link .link-page-type .link-address:hover {
+  color: #66abff;
+  border-bottom-color: rgba(102, 171, 255, 0.5);
+  text-decoration: none;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit {
+  padding: 15px 12px;
+  min-width: 275px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-popover-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  opacity: 0.4;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-popover-close:hover {
+  opacity: 1;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-popover-header {
+  color: #3B7694;
+  font: bold 12px 'Avenir Next';
+  letter-spacing: 2.5px;
+  margin: 0 0 22px;
+  text-transform: uppercase;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-error-msg {
+  float: right;
+  font-size: 12px;
+  margin-top: 8px;
+  line-height: 36px;
+  color: #C2445C;
+  margin-right: 20px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-tabs-mini {
+  margin-bottom: 10px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-tabs-mini li {
+  margin: 0 4px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-tabs-mini li:first-child {
+  margin-left: 0;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-sp-button {
+  margin: 8px 0 20px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .linkPopover-newWindow {
+  margin-bottom: 12px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-button-link {
+  padding-left: 0!important;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-item.active {
+  color: #338FFF;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner],
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] {
+  height: 238px;
+  padding: 6px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: 'Avenir Next W10 Regular';
+  /*
+        Переделал структуру. Сейчас :hover и :active не завязаны на родителя.
+        
+        
+        .ul-linkPopover-edit-orderFormItem:hover .ul-linkPopover-edit-item,
+        .ul-linkPopover-edit-innerItem .ul-linkPopover-edit-item:hover {
+            //.animation(all 0.3s ease); // Это что!!!!?? возможно ты это имела в виду?
+            .animation(~'background-color');
+            background-color: fade(@colorTextSecondary, 20%);
+            
+            &:active {
+                //background-color: @colorDarkPlus; // сначало цвет был с альфаканалом, а потом стал без него. Я говорил про этот момент
+                background-color: fade(darken(@colorDarkPlus, 20%), 20%);
+                color: @colorTextSecondaryPlus;
+            }
+        }*/
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-item,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-item {
+  display: block;
+  cursor: pointer;
+  height: 30px;
+  line-height: 28px;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-item .ul-linkPopover-edit-item-wrapper,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-item .ul-linkPopover-edit-item-wrapper {
+  padding: 0 5px 0 15px;
+  max-width: 165px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  display: inline-block;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-item .ul-linkPopover-edit-item-wrapper.mode-fluid,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-item .ul-linkPopover-edit-item-wrapper.mode-fluid {
+  max-width: 100% !important;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-item .ul-linkPopover-edit-item-wrapper + .ul-activeIcon,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-item .ul-linkPopover-edit-item-wrapper + .ul-activeIcon {
+  margin-top: -2px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #4caf50;
+  opacity: 0;
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-item.active,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-item.active {
+  color: #FFFFFF !important;
+  background-color: rgba(59, 118, 148, 0.4) !important;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-item.active .ul-linkPopover-edit-item-wrapper + .ul-activeIcon,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-item.active .ul-linkPopover-edit-item-wrapper + .ul-activeIcon {
+  opacity: 1;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-item:hover,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-item:hover {
+  background-color: rgba(59, 118, 148, 0.2);
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-item:active,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-item:active {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #1B4F6B;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-orderFormItemActions:hover + .ul-linkPopover-edit-item,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-orderFormItemActions:hover + .ul-linkPopover-edit-item,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .js-show-anchors:hover + .ul-linkPopover-edit-item,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .js-show-anchors:hover + .ul-linkPopover-edit-item {
+  background-color: rgba(59, 118, 148, 0.2);
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-orderFormItemActions:active + .ul-linkPopover-edit-item,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-orderFormItemActions:active + .ul-linkPopover-edit-item,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .js-show-anchors:active + .ul-linkPopover-edit-item,
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .js-show-anchors:active + .ul-linkPopover-edit-item {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #1B4F6B;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] {
+  border: 2px solid #3B7694;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner].error {
+  border-color: #C2445C;
+  background: rgba(194, 68, 92, 0.2);
+  -webkit-transition-property: border-color, background-color;
+  transition-property: border-color, background-color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-innerItem {
+  position: relative;
+  line-height: 30px;
+  color: #8DA8B8;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-innerItem .ul-linkPopover-edit-opened-anchors {
+  position: absolute;
+  top: -1px;
+  right: 14px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-innerItem.ul-js-showAnchors .ul-linkPopover-edit-opened-anchors span[data-opened=true] {
+  display: inline-block;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-innerItem.ul-js-showAnchors .ul-linkPopover-edit-opened-anchors span[data-opened=false] {
+  display: none;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-innerItem.ul-js-showAnchors .ul-linkPopover-edit-anchors {
+  display: block;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-innerItem .ul-linkPopover-edit-opened-anchors {
+  display: inline-block;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-innerItem .ul-linkPopover-edit-opened-anchors span[data-opened=true] {
+  display: none;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-innerItem .ul-linkPopover-edit-anchors {
+  display: none;
+  font-size: 12px;
+  color: #3B7694;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-innerItem .ul-linkPopover-edit-anchors .ul-linkPopover-edit-item {
+  display: block;
+  padding-left: 22px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] {
+  border: 2px solid #3B7694;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm].error {
+  border-color: #C2445C;
+  background: rgba(194, 68, 92, 0.2);
+  -webkit-transition-property: border-color, background-color;
+  transition-property: border-color, background-color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-orderFormItem {
+  position: relative;
+  line-height: 30px;
+  color: #8DA8B8;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-orderFormItem .ul-linkPopover-edit-orderFormItemActions {
+  position: absolute;
+  top: -1px;
+  right: 14px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-orderFormItem .ul-linkPopover-edit-orderFormItemActions span {
+  margin: 0 5px;
+  height: 30px;
+  line-height: 30px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=orderForm] .ul-linkPopover-edit-orderFormItem .ul-linkPopover-edit-item-wrapper {
+  max-width: 170px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .js-linkPopover-orderFormAdd {
+  padding-left: 1px;
+  margin-top: 4px;
+}
+.ul-linkPopover .ul-linkPopover-linkEdit .js-linkPopover-orderFormAdd span {
+  font-size: 12px;
+}
+.ul-linkPopover.wide-mode .ul-linkPopover-linkEdit {
+  min-width: 335px;
+}
+.ul-linkPopover.wide-mode .ul-linkPopover-linkEdit .ul-linkPopover-edit-page[data-type=inner] .ul-linkPopover-edit-item-wrapper {
+  max-width: 230px!important;
+}

@@ -1,0 +1,309 @@
+/**
+ *
+ *
+ */
+/* -- SCREEN Media queries -- */
+/* -- COLORS -- */
+/* -- END COLORS -- */
+/* -- IMG PATH -- */
+/* -- END IMG PATH -- */
+/* -- BASE PROJECT FONT SETTINGS -- */
+/* -- END BASE PROJECT FONT SETTINGS -- */
+/* -- ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- END ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- ANIMATION STYLE -- */
+/* -- END ANIMATION STYLE -- */
+/* -- PRIMARY MIXIN -- */
+/*.transform(...) {
+	transform: @arguments translateZ(0);
+	-ms-transform: @arguments translateZ(0);
+	-webkit-transform: @arguments translateZ(0);
+}*/
+/* -- END PRIMARY MIXIN -- */
+/* -- SPECIFIC MIXIN -- */
+/*-- Light bg typography styles
+-----------------------------*/
+/*---------------------------*/
+/* -- END SPECIFIC MIXIN -- */
+.js-post-wrap .video-inline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 999;
+}
+.ul-editableWithEditor {
+  outline: none;
+  /*.js-readmore-placeholder {
+		border: 3px solid @colorBlue;
+		height: 3px;
+		&:after {
+			display: none;
+		}
+	}*/
+}
+.ul-editableWithEditor img {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-editableWithEditor hr {
+  height: 30px;
+  border-bottom: 3px solid;
+  position: relative;
+  width: 100%;
+  display: block;
+  -webkit-transition-property: height, background, border;
+  transition-property: height, background, border;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-editableWithEditor hr:after {
+  content: "Разделитель читать далее";
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  text-align: center;
+}
+.ul-editableWithEditor hr .ul-remove-readmore {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+}
+.ul-editableWithEditor hr .ul-drag-readmore {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
+.ul-editableWithEditor hr .ul-drag-readmore span {
+  margin: 0 -4px;
+}
+.ul-editableWithEditor .js-link {
+  background-color: rgba(51, 143, 255, 0.4);
+}
+hr {
+  height: 0;
+  border: 0;
+}
+.popover-link {
+  margin: -2px -12px -4px;
+}
+.ul-editor-controls-inline {
+  margin: 0 -6px;
+}
+.ul-editor-controls-inline .editor-separator {
+  display: inline-block;
+  width: 2px;
+  height: 36px;
+  background: #2A4452;
+  vertical-align: middle;
+  margin: -2px 0 -3px;
+}
+#ul-editor-inline-controls,
+#ul-editor-image-controls,
+#ul-editor-video-controls {
+  background: #243742;
+  height: 0;
+  z-index: 300;
+  opacity: 0;
+  vertical-align: middle;
+  position: absolute;
+  overflow: hidden;
+  padding: 0 3px;
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+#ul-editor-inline-controls.editor-visible,
+#ul-editor-image-controls.editor-visible,
+#ul-editor-video-controls.editor-visible {
+  height: 37px;
+  overflow: visible;
+  opacity: 1;
+  -webkit-pointer-events: auto;
+  pointer-events: auto;
+}
+#ul-editor-inline-controls.editor-visible#ul-editor-inline-controls,
+#ul-editor-image-controls.editor-visible#ul-editor-inline-controls,
+#ul-editor-video-controls.editor-visible#ul-editor-inline-controls {
+  -webkit-transition-property: opacity, top, left;
+  transition-property: opacity, top, left;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#ul-editor-inline-controls p,
+#ul-editor-image-controls p,
+#ul-editor-video-controls p {
+  position: relative;
+  display: inline-block;
+  margin: 0 !important;
+  white-space: nowrap;
+  z-index: 2;
+}
+#ul-editor-inline-controls p button,
+#ul-editor-image-controls p button,
+#ul-editor-video-controls p button {
+  outline: none !important;
+  background: none;
+  border: none;
+  color: #7094A7;
+  height: 33px;
+  width: 33px;
+  margin-top: 2px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#ul-editor-inline-controls p button span,
+#ul-editor-image-controls p button span,
+#ul-editor-video-controls p button span {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+}
+#ul-editor-inline-controls p button:active,
+#ul-editor-image-controls p button:active,
+#ul-editor-video-controls p button:active {
+  color: #435f6e !important;
+  margin: 0;
+  padding: 0;
+}
+#ul-editor-inline-controls p button.active,
+#ul-editor-image-controls p button.active,
+#ul-editor-video-controls p button.active {
+  color: #FFFFFF;
+}
+#ul-editor-inline-controls p button.active:hover,
+#ul-editor-image-controls p button.active:hover,
+#ul-editor-video-controls p button.active:hover {
+  color: #ffffff !important;
+}
+#ul-editor-inline-controls p button:hover,
+#ul-editor-image-controls p button:hover,
+#ul-editor-video-controls p button:hover {
+  color: #90acba;
+}
+#ul-editor-inline-controls p button[disabled],
+#ul-editor-image-controls p button[disabled],
+#ul-editor-video-controls p button[disabled] {
+  color: rgba(112, 148, 167, 0.3);
+}
+#ul-editor-inline-controls .editor-separator,
+#ul-editor-image-controls .editor-separator,
+#ul-editor-video-controls .editor-separator {
+  position: relative;
+  display: inline-block;
+  width: 2px;
+  height: 37px;
+  background: #2A4452;
+  vertical-align: top;
+  z-index: 2;
+}
+#ul-editor-inline-controls .editor-inline-arrow,
+#ul-editor-image-controls .editor-inline-arrow,
+#ul-editor-video-controls .editor-inline-arrow {
+  background: #243742;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  z-index: 1;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+#ul-editor-inline-controls .editor-inline-arrow[data-gravity="bottom"],
+#ul-editor-image-controls .editor-inline-arrow[data-gravity="bottom"],
+#ul-editor-video-controls .editor-inline-arrow[data-gravity="bottom"] {
+  bottom: -5px;
+}
+#ul-editor-inline-controls .editor-inline-arrow[data-gravity="top"],
+#ul-editor-image-controls .editor-inline-arrow[data-gravity="top"],
+#ul-editor-video-controls .editor-inline-arrow[data-gravity="top"] {
+  top: -5px;
+}
+.ul-editor-loading-img {
+  background: rgba(9, 24, 31, 0.9) url("../../../img/loading.gif") no-repeat center !important;
+  background-size: 20px 20px !important;
+  display: inline-block;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.ul-editor-loading-img img {
+  opacity: 0;
+}
+#ul-editor-image-resize,
+#ul-editor-video-resize {
+  border: 1px solid #338FFF;
+  position: absolute;
+  z-index: 300;
+  -webkit-pointer-events: none;
+  pointer-events: none;
+}
+#ul-editor-image-resize span,
+#ul-editor-video-resize span {
+  background: #338FFF;
+  display: block;
+  height: 10px;
+  width: 10px;
+  -webkit-pointer-events: auto;
+  pointer-events: auto;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+}
+#ul-editor-image-resize span.editor-img-resize-tl,
+#ul-editor-video-resize span.editor-img-resize-tl,
+#ul-editor-image-resize span.editor-video-resize-tl,
+#ul-editor-video-resize span.editor-video-resize-tl {
+  cursor: nw-resize;
+  top: -5px;
+  left: -5px;
+}
+#ul-editor-image-resize span.editor-img-resize-tr,
+#ul-editor-video-resize span.editor-img-resize-tr,
+#ul-editor-image-resize span.editor-video-resize-tr,
+#ul-editor-video-resize span.editor-video-resize-tr {
+  cursor: ne-resize;
+  top: -5px;
+  right: -5px;
+}
+#ul-editor-image-resize span.editor-video-resize-bl,
+#ul-editor-video-resize span.editor-video-resize-bl,
+#ul-editor-image-resize span.editor-img-resize-bl,
+#ul-editor-video-resize span.editor-img-resize-bl {
+  cursor: sw-resize;
+  bottom: -5px;
+  left: -5px;
+}
+#ul-editor-image-resize span.editor-video-resize-br,
+#ul-editor-video-resize span.editor-video-resize-br,
+#ul-editor-image-resize span.editor-img-resize-br,
+#ul-editor-video-resize span.editor-img-resize-br {
+  cursor: se-resize;
+  bottom: -5px;
+  right: -5px;
+}

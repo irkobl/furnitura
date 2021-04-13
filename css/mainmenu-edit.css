@@ -1,0 +1,237 @@
+/**
+ *
+ *
+ */
+/* -- SCREEN Media queries -- */
+/* -- COLORS -- */
+/* -- END COLORS -- */
+/* -- IMG PATH -- */
+/* -- END IMG PATH -- */
+/* -- BASE PROJECT FONT SETTINGS -- */
+/* -- END BASE PROJECT FONT SETTINGS -- */
+/* -- ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- END ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- ANIMATION STYLE -- */
+/* -- END ANIMATION STYLE -- */
+/* -- PRIMARY MIXIN -- */
+/*.transform(...) {
+	transform: @arguments translateZ(0);
+	-ms-transform: @arguments translateZ(0);
+	-webkit-transform: @arguments translateZ(0);
+}*/
+/* -- END PRIMARY MIXIN -- */
+/* -- SPECIFIC MIXIN -- */
+/*-- Light bg typography styles
+-----------------------------*/
+/*---------------------------*/
+/* -- END SPECIFIC MIXIN -- */
+.ul-colors.js-fm-colors .ul-maminmenu-bg-white {
+  background: #0f0f0f;
+}
+.ul-colors.js-fm-colors .ul-maminmenu-bg-lightGray {
+  background: #444444;
+}
+.ul-colors.js-fm-colors .ul-maminmenu-bg-darkGray {
+  background: #a8a8a8;
+}
+.ul-colors.js-fm-colors .ul-maminmenu-bg-black {
+  background: #f5f5f5;
+}
+.ul-menu-item-bgcolor {
+  color: #3B7694 !important;
+}
+#mainmenu-form-block .mjs-nestedSortable-error div {
+  border-color: #C2445C !important;
+}
+#mainmenu-form-block #nested-sortable-section {
+  margin-top: -11px;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+#mainmenu-form-block #nested-sortable-section .ui-sortable-helper {
+  opacity: .5;
+}
+#mainmenu-form-block #nested-sortable-section ol {
+  list-style-type: none;
+  display: block;
+  width: 100%;
+  padding: 0px;
+}
+#mainmenu-form-block #nested-sortable-section ol:empty {
+  position: absolute;
+}
+#mainmenu-form-block #nested-sortable-section ol li {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#mainmenu-form-block #nested-sortable-section ol li.placeholder div {
+  height: 40px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 2px dashed #1B4F6B;
+}
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit) {
+  background-color: rgba(38, 56, 69, 0.55);
+}
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit) div.center {
+  color: rgba(59, 118, 148, 0.5);
+}
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit) .icon-content-special-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit) .icon-content-special-link:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 16px;
+  background-color: rgba(59, 118, 148, 0.5);
+  transform: rotate(45deg);
+}
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit) .icon-content-special-link:before {
+  color: rgba(59, 118, 148, 0.5);
+}
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit):hover {
+  background-color: #1B4F6B;
+}
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit):hover .ul-icon-link {
+  opacity: 0;
+}
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit):hover div.center {
+  color: #8DA8B8;
+}
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit).item-have-children div.center,
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit).item-have-children .ul-icon-link:before {
+  color: #8DA8B8;
+}
+#mainmenu-form-block #nested-sortable-section ol li[data-link-type="none"] > .content:not(.edit).item-have-children .ul-icon-link:after {
+  background-color: #8DA8B8;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content {
+  display: block;
+  height: 43px;
+  padding: 0 0px 0 13px;
+  overflow: hidden;
+  cursor: grab;
+  cursor: -webkit-grab;
+  min-width: 75px;
+  margin-bottom: 2px;
+  border-left: 3px solid transparent;
+  color: #FFFFFF;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  background-color: #263845;
+  position: relative;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content .ul-dotted-icon {
+  color: rgba(59, 118, 148, 0.5);
+  position: absolute;
+  top: 14px;
+  left: 2px;
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content .icon-content-special-link {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0;
+  position: absolute;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content.edit {
+  background-color: #1B4F6B;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content.current {
+  border-left: 3px solid #338FFF;
+  background-color: #1B4F6B;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content.current div.center {
+  color: #FFFFFF;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content div.left {
+  float: left;
+  height: 100%;
+  width: 10px;
+  padding: 10px 0px;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content div.center {
+  color: #8DA8B8;
+  padding: 14px 0px 10px 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content:hover {
+  background-color: #1B4F6B;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content:hover div.right {
+  opacity: 1;
+  -webkit-box-shadow: 7px 0px 13px 20px rgba(27, 79, 107, 0.94);
+  box-shadow: 7px 0px 13px 20px rgba(27, 79, 107, 0.94);
+  background: rgba(27, 79, 107, 0.95);
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content div.right {
+  position: relative;
+  padding: 11px 4px;
+  float: right;
+  height: 100%;
+  width: 65px;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content div.right.edit {
+  opacity: 1 !important;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content div.right span:nth-child(1),
+#mainmenu-form-block #nested-sortable-section ol li div.content div.right span:nth-child(2) {
+  cursor: pointer;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content div.right span:nth-child(2) {
+  margin-left: 7px;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content div.right span.triangle {
+  display: block;
+  opacity: 0;
+  float: right;
+  width: 0px;
+  height: 0px;
+  border-right: 12px solid #132026;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+#mainmenu-form-block #nested-sortable-section ol li div.content div.right span.triangle.active {
+  opacity: 1;
+}
+#mainmenu-form-block #nested-sortable-section ol ol,
+#mainmenu-form-block #nested-sortable-section ol ol.placeholder {
+  padding-left: 40px;
+}
+#mainmenu-form-block #nested-sortable-section ol ol ol,
+#mainmenu-form-block #nested-sortable-section ol ol ol.placeholder {
+  padding-left: 60px;
+}

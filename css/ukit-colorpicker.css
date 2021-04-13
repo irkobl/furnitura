@@ -1,0 +1,281 @@
+.ul-colorpicker { 
+	padding: 0px !important;
+	z-index: 900;
+	border-radius: 6px !important;
+	background: rgba(9, 24, 31, 0.95) !important; 
+	box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.30) !important;
+}
+.colorpicker {
+	width: 226px;
+	height: 280px;
+	position: absolute;
+	display: none;
+
+}
+.colorpicker_color {
+	width: 175px;
+	height: 175px;
+	left: 12px;
+	top: 12px;
+	position: absolute;
+	background: #f00;
+	/*overflow: hidden;*/
+	cursor: crosshair;
+	border-radius: 3px !important;
+}
+.colorpicker_color div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 175px; 
+	height: 175px;
+	background: url(../../img/colorpicker/colorpicker_overlay.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 2px;
+}
+.colorpicker_color div div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 13px;
+	height: 13px;
+	overflow: hidden;
+	background: transparent;
+	margin: -5px 0 0 -5px;
+	border-radius: 50% !important;
+	border: 2px solid #fff;
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.10);
+}
+.colorpicker_hue {
+	position: absolute;
+	top: 12px;
+	left: 197px;
+	width: 19px;
+	height: 175px;
+	background: url(../../img/colorpicker/spectre.png);
+	cursor: n-resize;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.colorpicker_hue div {
+	position: absolute;
+	width: 23px;
+	height: 6px;
+	border-radius: 6px;
+	border: 2px solid white;
+	left: 0px;
+	margin-left: -2px;
+	margin-top: -2px
+}
+.colorpicker_new_color {
+	position: absolute;
+	width: 60px;
+	height: 30px;
+	left: 213px;
+	top: 13px;
+	background: #f00;
+	display: none;
+}
+.colorpicker_current_color {
+	position: absolute;
+	width: 60px;
+	height: 30px;
+	left: 283px;
+	top: 13px;
+	background: #f00;
+	display: none;
+
+}
+.colorpicker input {
+	background-color: transparent;
+	border: 1px solid transparent;
+	position: absolute;
+	font-size: 11px;
+	font-family: 'Avenir Next';
+	color: #898989;
+	top: 4px;
+	right: 11px;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	height: 15px;
+	outline: none;
+}
+.colorpicker_hex {
+	position: absolute;
+	width: 72px;
+	height: 30px;
+	left: 12px;
+	top: 198px;
+}
+
+.colorpicker_hex:before {
+	content: "HEX";
+	font-size: 10px;
+	color: #3b7694;
+	letter-spacing: 1.5px;
+	position: absolute;
+	top: calc(100% + 3px);
+	left: 24px;
+	font-weight: bold;
+}
+    
+.colorpicker_hex input, 
+.colorpicker_rgb_r input,
+.colorpicker_rgb_g input,
+.colorpicker_rgb_b input {
+	text-align: center;
+	color: #dae1e6;
+	text-transform: uppercase;
+	border: 2px solid rgba(58, 117, 147, 0.75);
+	border-radius: 6px;
+	position: absolute;
+	font-size: 11px;
+	font-family: 'Avenir Next';
+	top: 0px;
+	right: 0px;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	outline: none;
+	width: 100% !important;
+	-webkit-transition: 0.3s all ease;
+	transition: 0.3s all ease;
+}
+
+.colorpicker_hex input:hover, 
+.colorpicker_rgb_r input:hover,
+.colorpicker_rgb_g input:hover,
+.colorpicker_rgb_b input:hover {
+	border: 2px solid rgba(58, 117, 147, 1);
+}
+
+.colorpicker_hex input:focus, 
+.colorpicker_rgb_r input:focus,
+.colorpicker_rgb_g input:focus,
+.colorpicker_rgb_b input:focus {
+	background: rgba(51, 143, 255, 0.20);
+	border: 2px solid rgba(51, 143, 255, 1);
+}
+
+.colorpicker_rgb_r input,
+.colorpicker_rgb_g input,
+.colorpicker_rgb_b input {
+	width: 38px;
+}
+
+.colorpicker_field {
+	height: 30px;
+	width: 38px;
+	background-position: top;
+	position: absolute;
+}
+.colorpicker_field span {
+	position: absolute;
+	width: 12px;
+	height: 22px;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	cursor: n-resize;
+}
+.colorpicker_rgb_r {
+	top: 198px;
+	left: 90px;
+}
+.colorpicker_rgb_g {
+	top: 198px;
+	left: 134px;
+}
+.colorpicker_rgb_b {
+	top: 198px;
+	left: 178px;
+}
+
+.colorpicker_rgb_r:before {
+	content: "R";
+}
+.colorpicker_rgb_g:before {
+	content: "G";
+}
+.colorpicker_rgb_b:before {
+	content: "B";
+}
+
+.colorpicker_rgb_r:before,
+.colorpicker_rgb_g:before,
+.colorpicker_rgb_b:before {
+	font-size: 10px;
+	color: #3b7694;
+	position: absolute;
+	top: calc(100% + 3px);
+	letter-spacing: 1.5px;
+	left: 16px;
+	font-weight: bold;
+}
+
+.colorpicker_hsb_h {
+	background-image: url(../../img/colorpicker/colorpicker_hsb_h.png);
+	top: 52px;
+	left: 282px;
+	display: none;
+}
+.colorpicker_hsb_s {
+	background-image: url(../../img/colorpicker/colorpicker_hsb_s.png);
+	top: 82px;
+	left: 282px;
+	display: none;
+}
+
+.colorpicker_hsb_b {
+	background-image: url(../../img/colorpicker/colorpicker_hsb_b.png);
+	top: 112px;
+	left: 282px;
+	display: none;
+}
+
+.colorpicker_submit {
+	position: absolute;
+	width: 40px;
+	height: 22px;
+	color: #FFF;
+	cursor: pointer;
+	border: 1px solid #333;
+	border-radius: 2px;
+	-weblit-border-radius: 2px;
+	text-align: center;
+	left: 303px;
+	top: 142px;
+	display: none;
+	overflow: hidden;
+}
+
+.colorpicker_focus {
+	background-position: center;
+}
+.colorpicker_hex.colorpicker_focus {
+	background-position: bottom;
+}
+.colorpicker_submit.colorpicker_focus {
+	background-position: bottom;
+}
+.colorpicker_slider {
+	background-position: bottom;
+}
+
+.ul-colorpicker-closeSettings { 
+	position: absolute;
+	bottom: 0;
+	left: -10px;
+	font-size: 11px;
+	text-transform: lowercase;
+	opacity: 0.6;
+}
+
+.ul-colorpicker-settings { 
+	position: absolute;
+	top: calc(100% - 28px);
+	left: calc(50% - 10px);
+	font-size: 14px !important;
+} 

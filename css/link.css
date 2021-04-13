@@ -1,0 +1,237 @@
+/**
+ *
+ *
+ */
+/* -- SCREEN Media queries -- */
+/* -- COLORS -- */
+/* -- END COLORS -- */
+/* -- IMG PATH -- */
+/* -- END IMG PATH -- */
+/* -- BASE PROJECT FONT SETTINGS -- */
+/* -- END BASE PROJECT FONT SETTINGS -- */
+/* -- ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- END ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- ANIMATION STYLE -- */
+/* -- END ANIMATION STYLE -- */
+/* -- PRIMARY MIXIN -- */
+/*.transform(...) {
+	transform: @arguments translateZ(0);
+	-ms-transform: @arguments translateZ(0);
+	-webkit-transform: @arguments translateZ(0);
+}*/
+/* -- END PRIMARY MIXIN -- */
+/* -- SPECIFIC MIXIN -- */
+/*-- Light bg typography styles
+-----------------------------*/
+/*---------------------------*/
+/* -- END SPECIFIC MIXIN -- */
+#ul-link .inner-page,
+#ul-link .orderForm {
+  margin-top: 10px;
+}
+#ul-link .list-style {
+  padding: 6px 0;
+  margin: 0;
+  height: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 2px solid #3B7694;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+#ul-link .list-item-style {
+  display: block;
+  padding: 8px 10px;
+  border-left: 3px solid transparent;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 16px;
+  white-space: nowrap;
+  color: #8DA8B8;
+  cursor: pointer;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#ul-link .list-item-style:hover {
+  color: #FFFFFF;
+}
+#ul-link .list-item-style:hover {
+  color: #FFFFFF;
+}
+#ul-link .list-item-style.active {
+  color: #FFFFFF;
+  border-left-color: #338FFF;
+}
+#ul-link .inner-page > ul {
+  padding: 6px 0;
+  margin: 0;
+  height: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 2px solid #3B7694;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+#ul-link .inner-page > ul > li {
+  clear: both;
+  line-height: 0;
+}
+#ul-link .inner-page > ul .ul-link-pageitem {
+  display: block;
+  padding: 8px 10px;
+  border-left: 3px solid transparent;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 16px;
+  white-space: nowrap;
+  color: #8DA8B8;
+  cursor: pointer;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#ul-link .inner-page > ul .ul-link-pageitem:hover {
+  color: #FFFFFF;
+}
+#ul-link .inner-page > ul .ul-link-pageitem:hover {
+  color: #FFFFFF;
+}
+#ul-link .inner-page > ul .ul-link-pageitem.active {
+  color: #FFFFFF;
+  border-left-color: #338FFF;
+}
+#ul-link .inner-page > ul .ul-link-pageheaders-toggle {
+  float: right;
+  padding: 8px 10px 8px 0;
+  color: #7094A7;
+}
+#ul-link .inner-page > ul .ul-link-pageheaders-toggle:hover {
+  color: #9fb7c4;
+}
+#ul-link .inner-page > ul .ul-link-pageheaders-toggle__show {
+  display: inline-block;
+  vertical-align: top;
+}
+#ul-link .inner-page > ul .ul-link-pageheaders-toggle__hide {
+  display: none;
+}
+#ul-link .inner-page > ul .page-headers-opened .ul-link-pageheaders-toggle__hide {
+  display: inline-block;
+  vertical-align: top;
+}
+#ul-link .inner-page > ul .page-headers-opened .ul-link-pageheaders-toggle__show {
+  display: none;
+}
+#ul-link .inner-page > ul .page-headers-opened ul {
+  opacity: 1;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+#ul-link .inner-page > ul ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#ul-link .inner-page > ul .ul-link-anchoritem {
+  padding: 6px 0 6px 22px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #8DA8B8;
+  font-family: 'Avenir Next';
+  font-size: 12px;
+  line-height: 14px;
+  color: #3B7694;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  border-left: 3px solid transparent;
+}
+#ul-link .inner-page > ul .ul-link-anchoritem:hover {
+  color: #FFFFFF;
+}
+#ul-link .inner-page > ul .ul-link-anchoritem.active {
+  color: #FFFFFF;
+  border-left-color: #338FFF;
+}
+#ul-link .inner-page p {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+#ul-link .orderForm-list {
+  min-width: 330px;
+  padding: 6px 0;
+  margin: 0;
+  height: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 2px solid #3B7694;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+#ul-link .orderForm-list .orderForm-list-item {
+  display: block;
+  padding: 8px 10px;
+  border-left: 3px solid transparent;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 16px;
+  white-space: nowrap;
+  color: #8DA8B8;
+  cursor: pointer;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#ul-link .orderForm-list .orderForm-list-item:hover {
+  color: #FFFFFF;
+}
+#ul-link .orderForm-list .orderForm-list-item:hover {
+  color: #FFFFFF;
+}
+#ul-link .orderForm-list .orderForm-list-item.active {
+  color: #FFFFFF;
+  border-left-color: #338FFF;
+}
+#ul-link .orderForm-list .orderForm-list-item .orderForm-list-item-label {
+  display: inline-block;
+  transform: translateY(1px);
+  max-width: 170px;
+  overflow: hidden;
+  margin-right: 20px;
+  text-overflow: ellipsis;
+  float: left;
+}
+#ul-link .orderForm-list .orderForm-list-item .orderForm-list-item-icon {
+  float: right;
+  padding-right: 10px;
+}

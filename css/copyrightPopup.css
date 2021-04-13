@@ -1,0 +1,26 @@
+.ul-copyright-popup {
+  text-align: center;
+  width: 100%;
+}
+.ul-copyright-popup-picture {
+  height: 70px;
+  width: 70px;
+  margin: 12px 0 18px;
+}
+.ul-copyright-popup-title {
+  color: #DAE1E6;
+  font-size: 15px;
+  margin-bottom: 6px;
+  letter-spacing: 3px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+.ul-copyright-popup-text {
+  color: #DAE1E6;
+  margin: 0 auto 30px;
+  max-width: 348px;
+  width: 100%;
+}
+.ul-copyright-popup-button-wrap {
+  margin-bottom: 18px;
+}

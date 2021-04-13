@@ -1,0 +1,204 @@
+/**
+ * Стили для настроек блока
+ * dynamic
+ * 
+ * 
+ * 
+ * checked
+ */
+/**
+ *
+ *
+ */
+/* -- SCREEN Media queries -- */
+/* -- COLORS -- */
+/* -- END COLORS -- */
+/* -- IMG PATH -- */
+/* -- END IMG PATH -- */
+/* -- BASE PROJECT FONT SETTINGS -- */
+/* -- END BASE PROJECT FONT SETTINGS -- */
+/* -- ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- END ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- ANIMATION STYLE -- */
+/* -- END ANIMATION STYLE -- */
+/* -- PRIMARY MIXIN -- */
+/*.transform(...) {
+	transform: @arguments translateZ(0);
+	-ms-transform: @arguments translateZ(0);
+	-webkit-transform: @arguments translateZ(0);
+}*/
+/* -- END PRIMARY MIXIN -- */
+/* -- SPECIFIC MIXIN -- */
+/*-- Light bg typography styles
+-----------------------------*/
+/*---------------------------*/
+/* -- END SPECIFIC MIXIN -- */
+#ul-container-settings .ul-container-item {
+  float: left;
+  margin-top: 15px;
+  width: 50%;
+}
+#ul-container-settings .ul-container-item.ul-container-item-right {
+  padding-left: 12px;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio:hover .ul-container-item-title {
+  color: #3B7694 !important;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio:hover .ul-container-item-img {
+  opacity: 1 !important;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio input:checked + .ul-fake-input + .ul-fake-input-text .ul-container-item-title {
+  color: #3B7694;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio input:checked + .ul-fake-input + .ul-fake-input-text .ul-container-item-img {
+  opacity: 1;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio .ul-fake-input {
+  margin-left: -9px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text {
+  margin: 0;
+  padding: 0 0 29px;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-title {
+  display: block;
+  text-align: center;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  color: #3B7694;
+  font-family: 'Avenir Next';
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #1B4F6B;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-img {
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  margin-top: 12px;
+  padding-right: 0;
+  opacity: 0.5;
+  width: 86px;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-img[data-type="container"] {
+  background: url("/img/block/block-container.svg") center no-repeat;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-img[data-type="fluid"] {
+  background: url("/img/block/block-fluid.svg") center no-repeat;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-img[data-type="padding"] {
+  background: url("/img/block/block-padding.svg") center no-repeat;
+}
+#ul-container-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-img[data-type="no-padding"] {
+  background: url("/img/block/block-no-padding.svg") center no-repeat;
+}
+.ul-container-block-settings .ul-container-item {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio:hover .ul-container-item-title {
+  color: #3B7694 !important;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio:hover .ul-container-item-img {
+  opacity: 1 !important;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio input:checked + .ul-fake-input + .ul-fake-input-text .ul-container-item-title {
+  color: #3B7694;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio input:checked + .ul-fake-input + .ul-fake-input-text .ul-container-item-img {
+  opacity: 1;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio .ul-fake-input {
+  margin-left: -9px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text {
+  margin: 0;
+  padding: 0 0 29px;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-title {
+  display: block;
+  text-align: center;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  color: #3B7694;
+  font-family: 'Avenir Next';
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #1B4F6B;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 12px;
+  padding-right: 0;
+  width: 100%;
+  opacity: 0.5;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-img--height-content {
+  background: url("/img/block/block-height-content.svg") center no-repeat;
+  height: 57px;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-img--height-screen {
+  background: url("/img/block/block-height-screen.svg") center no-repeat;
+  height: 57px;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-img--goods-content {
+  background: url("/img/block/goods-height-content.svg") center no-repeat;
+  height: 45px;
+}
+.ul-container-block-settings .ul-container-item .ul-container-item-radio .ul-fake-input-text .ul-container-item-img--goods-fill {
+  background: url("/img/block/goods-height-fill.svg") center no-repeat;
+  height: 45px;
+}

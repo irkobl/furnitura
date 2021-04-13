@@ -1,0 +1,259 @@
+/**
+ *
+ *
+ */
+/* -- SCREEN Media queries -- */
+/* -- COLORS -- */
+/* -- END COLORS -- */
+/* -- IMG PATH -- */
+/* -- END IMG PATH -- */
+/* -- BASE PROJECT FONT SETTINGS -- */
+/* -- END BASE PROJECT FONT SETTINGS -- */
+/* -- ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- END ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- ANIMATION STYLE -- */
+/* -- END ANIMATION STYLE -- */
+/* -- PRIMARY MIXIN -- */
+/*.transform(...) {
+	transform: @arguments translateZ(0);
+	-ms-transform: @arguments translateZ(0);
+	-webkit-transform: @arguments translateZ(0);
+}*/
+/* -- END PRIMARY MIXIN -- */
+/* -- SPECIFIC MIXIN -- */
+/*-- Light bg typography styles
+-----------------------------*/
+/*---------------------------*/
+/* -- END SPECIFIC MIXIN -- */
+#ul-imagecrop {
+  background-color: rgba(9, 24, 31, 0.25);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 600;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#ul-imagecrop.loading:after {
+  z-index: 99999;
+  content: '';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 50%;
+  left: 50%;
+  margin: -21px 0 0 -21px;
+  background-color: rgba(19, 32, 38, 0.8);
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  background-image: url("/img/loader-white.svg");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#ul-imagecrop.loading .ul-imagecrop-content {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+}
+#ul-imagecrop .ul-imagecrop-content {
+  display: inline-block;
+  max-height: 90%;
+  max-width: 90%;
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+#ul-imagecrop .ul-imagecrop-content .ul-imagecrop-image {
+  margin: 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container {
+  overflow: visible;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container img {
+  overflow: hidden;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-viewer {
+  outline-width: 0;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-face {
+  opacity: 0;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-dashed {
+  border: 0;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-line {
+  background-color: #338FFF;
+  opacity: 1;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-line.line-e {
+  right: 0px;
+  width: 2px;
+  cursor: ew-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-line.line-n {
+  top: 0px;
+  height: 2px;
+  cursor: ns-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-line.line-w {
+  left: 0px;
+  width: 2px;
+  cursor: ew-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-line.line-s {
+  bottom: 0px;
+  height: 2px;
+  cursor: ns-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-point {
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #338FFF;
+  background-color: #FFFFFF;
+  opacity: 1;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-point.point-e {
+  right: -5px;
+  margin-top: -6px;
+  cursor: ew-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-point.point-n {
+  top: -5px;
+  margin-left: -6px;
+  cursor: ns-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-point.point-w {
+  left: -5px;
+  margin-top: -6px;
+  cursor: ew-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-point.point-s {
+  bottom: -5px;
+  margin-left: -6px;
+  cursor: ns-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-point.point-ne {
+  top: -5px;
+  right: -5px;
+  cursor: nesw-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-point.point-nw {
+  top: -5px;
+  left: -5px;
+  cursor: nwse-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-point.point-sw {
+  bottom: -5px;
+  left: -5px;
+  cursor: nesw-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container .cropper-dragger .cropper-point.point-se {
+  right: -5px;
+  bottom: -5px;
+  cursor: nwse-resize;
+}
+#ul-imagecrop .ul-imagecrop-content .ul-imagecrop-actions {
+  width: 112px;
+  height: 50px;
+  color: #DAE1E6;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  -webkit-transition-property: bottom;
+  transition-property: bottom;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#ul-imagecrop .ul-imagecrop-content .ul-imagecrop-actions span {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  -webkit-border-radius: 48px;
+  border-radius: 48px;
+  -webkit-transition-property: opacity, background-color, color;
+  transition-property: opacity, background-color, color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+#ul-imagecrop .ul-imagecrop-content .ul-imagecrop-actions span.js-imagecrop-done {
+  right: 5px;
+  position: absolute;
+}
+#ul-imagecrop .ul-imagecrop-content .ul-imagecrop-actions span.js-imagecrop-cancel {
+  left: 5px;
+  position: absolute;
+}
+#ul-imagecrop .ul-imagecrop-content .ul-imagecrop-actions span:hover {
+  background-color: #132026;
+  color: #FFFFFF;
+}
+#ul-imagecrop .ul-imagecrop-content .ul-imagecrop-actions span:active {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.5;
+}
+#ul-imagecrop .ul-imagecrop-content .ul-imagecrop-actions.ul-imagecrop-actions-bottom {
+  bottom: -60px;
+  right: 50%;
+  transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-modal {
+  background-color: #1C2A33;
+  opacity: 0.3;
+}
+#ul-imagecrop .ul-imagecrop-content .cropper-container {
+  left: 0 !important;
+}
+#ul-imagecrop .ul-imagecrop-content .ul-imagecrop-rotation {
+  color: #FFFFFF;
+  text-align: center;
+}

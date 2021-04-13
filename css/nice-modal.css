@@ -1,0 +1,165 @@
+.ul-nice-modal {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 20px 0;
+  overflow: auto;
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(21, 26, 29, 0.7);
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-nice-modal__overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.ul-nice-modal__dialog {
+  position: relative;
+  z-index: 2;
+  margin: auto 0;
+  width: 504px;
+  overflow: hidden;
+  font-family: 'Avenir Next W10 Regular';
+  letter-spacing: 0.13px;
+  border-radius: 6px;
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  -webkit-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-nice-modal__dialog--wide {
+  width: 860px;
+}
+.ul-nice-modal__dialog__content {
+  position: relative;
+  padding: 24px 42px;
+  font: 14px/1.286 'Avenir Next';
+  color: #DAE1E6;
+  background: #263845;
+}
+.ul-nice-modal__dialog__content:nth-child(2n) {
+  background: #132026;
+}
+.ul-nice-modal__dialog__content__title {
+  color: #FFFFFF;
+  font-size: 17px;
+  font-family: Avenir Next W10 Regular;
+}
+.ul-nice-modal__dialog__content a {
+  color: #338FFF;
+  cursor: pointer;
+  text-decoration: none;
+}
+.ul-nice-modal__dialog__content a:hover,
+.ul-nice-modal__dialog__content a.zeroclipboard-is-hover {
+  color: #338FFF;
+  text-decoration: underline;
+}
+.ul-nice-modal__dialog__content a:active,
+.ul-nice-modal__dialog__content a.zeroclipboard-is-active {
+  color: #0073ff;
+}
+.ul-nice-modal--vertical-stretch {
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.ul-nice-modal--vertical-stretch .ul-nice-modal__dialog {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin: 24px 0;
+}
+.ul-nice-modal--vertical-stretch .ul-nice-modal__dialog__content {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+}
+.ul-nice-modal--vertical-stretch .ul-nice-modal__dialog__content:last-of-type {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+.ul-nice-modal__close {
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  right: 32px;
+  color: #8DA8B8;
+  padding: 8px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-nice-modal__close:hover {
+  color: #bcccd5;
+}
+.ul-nice-modal[data-is-visible="true"] {
+  opacity: 1;
+  -webkit-pointer-events: auto;
+  pointer-events: auto;
+}
+.ul-nice-modal[data-is-visible="true"] .ul-nice-modal__dialog {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+}
+@media (max-width: 400px) {
+  .ul-nice-modal__dialog__content {
+    padding: 10px 5px;
+  }
+}

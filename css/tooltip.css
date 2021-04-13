@@ -1,0 +1,69 @@
+.ul-device-tooltip {
+  position: fixed;
+  z-index: 350;
+  left: -280px;
+  top: 0;
+  bottom: 0;
+  width: 280px;
+  -webkit-transition-property: left, opacity;
+  transition-property: left, opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  opacity: 0;
+  -webkit-pointer-events: none;
+  pointer-events: none;
+}
+.ul-device-tooltip[data-is-inside="true"] {
+  left: 0;
+}
+.ul-device-tooltip[data-is-visible="true"] {
+  opacity: 1;
+  -webkit-pointer-events: auto;
+  pointer-events: auto;
+}
+.ul-device-tooltip__icon {
+  top: 94px;
+  left: 0;
+  margin-top: 1px;
+  position: absolute;
+}
+.ul-device-tooltip__icon [class*=icon-content-] {
+  color: #FFFFFF !important;
+}
+.ul-device-tooltip__content {
+  position: absolute;
+  left: 48px;
+  padding: 0 12px;
+  width: 206px;
+  font: 14px/1.071 'Avenir Next';
+  color: #DAE1E6;
+  letter-spacing: 0.5px;
+}
+.ul-device-tooltip__content__arrow {
+  display: block;
+  width: 94px;
+}
+.ul-device-tooltip__content__content {
+  display: block;
+  margin: 24px auto 0;
+  width: 54px;
+  height: 39px;
+}
+.ul-device-tooltip__content__icon {
+  color: #338FFF;
+}
+.ul-device-tooltip__content p {
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 1.07;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #dae1e6;
+}
+.ul-device-tooltip__content [class*=icon-content-] {
+  cursor: default;
+}
